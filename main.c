@@ -9,8 +9,8 @@
 
 #define touch 5 // the touch pin is 5
 #define light_r 1 // the light sensitive resistor output the data
-#define infrared 6 // the infrared sensor testing whether there is human activity
-#define bkl 24
+
+#define bkl 24 
 
 //  rtc.adjust(DateTime(year, mon, day, hour, minute,sec)); // put this line in the setup when adjusting the time
 
@@ -24,7 +24,7 @@ DHT dht(D,DHT11); // initialize the DHT11 sensor and relate it to the pin 28 dig
 RTC_DS3231 rtc;   //define the name of the time module
 
 void accu_time_display(){
-  DateTime now = rtc.now();
+  DateTime now = rtc.now(); // obtain the current time
   lcd.clear();
 
     if(now.month()<10 && now.day()<10){
