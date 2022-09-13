@@ -1,11 +1,11 @@
 #include<Wire.h>
-#include<LiquidCrystal.h>
-#include"DHT.h"
-#include "RTClib.h"
-#define y 4
+#include<LiquidCrystal.h> // the lcd library
+#include"DHT.h"           // the dht11 library
+#include "RTClib.h"       // used to apply the DS3231 
+#define y 4          // the y axis and x axis are related to analog pin of 4 and 2 and analog pin 3 relate to button
 #define x 2
 #define pres 3
-#define D 49  // relate to the temperature and humidity
+#define D 49  // relate to the temperature and humidity read in pin
 
 #define touch 5 // the touch pin is 5
 #define light_r 1 // the light sensitive resistor output the data
@@ -25,7 +25,7 @@ RTC_DS3231 rtc;   //define the name of the time module
 
 void accu_time_display(){
   DateTime now = rtc.now(); // obtain the current time
-  lcd.clear();
+  lcd.clear();     // clear for further display
 
     if(now.month()<10 && now.day()<10){
       lcd.setCursor(4,0);  lcd.print(now.year()); lcd.print("-"); lcd.print(now.month()); lcd.print("-"); lcd.print(now.day());
@@ -68,9 +68,9 @@ void accu_time_display(){
 
     if(now.hour()>=10 && now.minute()>=10 && now.second()>=10){
       lcd.setCursor(4,1); lcd.print(now.hour()); lcd.print(":"); lcd.print(now.minute()); lcd.print(":"); lcd.print(now.second());
-    }
+    }  // all these lines are used to make the time display neat and clean, the only difference is where the cursor start
     
-  delay(500); // get the time and print it once in the lcd
+  delay(500); // get the time and print it once in the lcd, ,  every 500ms exit the time display
 }
 
 //  lcd.setCursor(5,1); lcd.print("Set Hour"); lcd.setCursor(0,0); lcd.print((hm-hm%100)/100); lcd.print("-h-"); lcd.print(hm%100);; lcd.print("-m");
