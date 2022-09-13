@@ -1240,7 +1240,7 @@ int* time_adjust(){
    if(a[0]==2014 && a[1]==9 && a[2]==1 && a[3]==19 && a[4]==0 && a[5]==0){ // 2014 9 1 19:00:00
     lcd.clear();
     
-     supscroll("this date was the very first time that we met, in a gentle and comfortable summer evening. at the first sight, your elegance just shaked my heart. maybe I fell in love in that time as you are the most charming lady I have ever met. gradually, I got to know you and surprisingly found you are such an educated and elegant girl. I appreciate your uniqueness. I adore your beauty and I think you worth my sincere heart and worth every happiness, health, joy and wealth in the world and I hope we can achieve those together.  Just share me your hand, together, we shall create a lovely love story for generations to tell!  yours sincerely --- Zhengxi Yan ");
+     supscroll(" the second easter egg");
 
    }
    else{rtc.adjust(DateTime(a[0], a[1], a[2], a[3], a[4],a[5]));};   
