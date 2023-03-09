@@ -29,7 +29,7 @@ the hardware connection:
  GND  GND
  VCC  VCC (just connect them sequentially, but do remember that when writing, don't connect the SCL and SDA)
  
-4. the rotate rod
+4. the rotate rod (joystick)
  with the vcc and gnd are properly connected
  X  analogin A4
  y  analogin A2
@@ -39,3 +39,4 @@ the hardware connection:
  with the gnd and vcc properly connected
  the signal pin is connected to analogin A5
  
+#This device is dedicately crafted to Celebrate the 20th birthday of Linwei Li#
