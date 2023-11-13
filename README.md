@@ -39,4 +39,4 @@ the hardware connection:
  with the gnd and vcc properly connected
  the signal pin is connected to analogin A5
  
-#This device is dedicately crafted to Celebrate the 20th birthday of Linwei Li#
+#This device is dedicately crafted to Celebrate the 20th birthday for you know who#
