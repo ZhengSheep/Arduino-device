@@ -13,7 +13,7 @@ the hardware connection:
  d4  dig31
  d5  dig35
  d6  dig39
- d7  dig34
+ d7  dig43
  rw  GND
  v0  the middle point of the potential divider (read out the voltage)
  vss  GND
